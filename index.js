@@ -129,15 +129,16 @@ bot.on('message', message => {
 if (message.content.startsWith(`${prefix}cats`)) {
     i = Math.floor((Math.random() * maximum) + 1);
     console.log(i);
+    const attachment = new Discord.Attachment(`./cursedcat/${images[i]}`, `${images[i]}`);
     var embed = new Discord.RichEmbed()
         .setTitle("Cursed Cat Pic")
         .setColor("#f58e00")
-        .attachFile(`./cursedcat/${images[i]}`)
+        .attachFile(attachment)
         .setImage(`attachment://cursedcat/${images[i]}`)
         .setFooter(`Requested by ${message.author.username}`)
         .setTimestamp();
         
-    message.channel.send({embed});
+    message.channel.send({embed}).catch(console.error);
     
 }
 })
