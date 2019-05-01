@@ -141,3 +141,4 @@ if (message.content.startsWith(`${prefix}cats`)) {
     
 }
 })
+bot.login(process.env.BOT_TOKEN);
