@@ -134,7 +134,7 @@ if (message.content.startsWith(`${prefix}cats`)) {
         .setColor("#f58e00")
         .attachFile(`./cursedcat/${images[i]}`)
         .setImage(`attachment://cursedcat/${images[i]}`)
-        .setFooter("Requested by ",message.author.username)
+        .setFooter("Requested by ",`${message.author.username}`)
         .setTimestamp();
         
     message.channel.send({embed});
