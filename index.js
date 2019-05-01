@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 var cli = new Discord.Client({autoReconnect:true});
-var maximum = 100;
+var maximum = 101;
 var images = [
     /*01*/    "1.PNG",
     /*02*/    "2.PNG",
