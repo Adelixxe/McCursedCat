@@ -105,7 +105,8 @@ var images = [
     /*99*/    "99.PNG",
     /*100*/   "100.PNG",
     /*101*/   "101.PNG",
-    /*102*/   "102.PNG"
+    /*102*/   "102.PNG",
+    /*103*/   "103.png"
     ];
 
 bot.commands = new Discord.Collection();
